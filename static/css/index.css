@@ -1,0 +1,102 @@
+
+/*******侧边栏********/
+.user {
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+}
+/*user*/
+.user .logo {
+	width: 140px;
+	height: 140px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	margin:30px auto;
+	background: url("../img/user.jpg") no-repeat center center;
+	background-size: contain;
+}
+.user .name {
+	margin: 50px auto;
+	font-size: 50px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 5px;
+	font-family: "microsoft yahei";
+}
+.user .link {
+	margin-top: 30px;
+}
+.user .link > p {
+	color: #fff;
+	font-size: 14px;
+	padding: 0 20px;
+	margin: 8px 0;
+}
+.user .link span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.user .link a {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	width: 61%;
+	vertical-align: middle;
+	color: #fff;
+}
+.user .info > p {
+	padding: 0 20px;
+	position: relative;
+	padding-left: 50px;
+	color: #fff;
+	margin-top: 5px;
+}
+.user .info span {
+	font-size: 13px;
+}
+.user .info i {
+	position: absolute;
+	top: 2px;
+	left: 20px;
+
+}
+.user .info .fa-map-marker,
+.user .info .fa-mobile {
+	left: 23px;
+}
+
+/****** 主体 ******/
+.main {
+	margin-left: 250px;
+	padding: 50px 20px;
+}
+.main .wrapper {
+	margin-bottom: 20px;
+}
+.main-title {
+	position: relative;
+	padding-left: 50px;
+}
+.main-title .logo {
+	float: left;
+	color: #fff;
+	background: #000;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-top: -5px;
+	margin-left: -50px;
+}
+.main-title > h2 {
+	font-size: 18px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 6px;
+	font-weight: 900;
+}
