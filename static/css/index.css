@@ -100,3 +100,10 @@
 	padding-bottom: 6px;
 	font-weight: 900;
 }
+
+.content {
+	padding:0 36px;
+}
+.content li{
+	margin: 5px 0;
+}
