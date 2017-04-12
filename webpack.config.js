@@ -8,9 +8,10 @@ module.exports = {
 	// 	'./static/css/index.css'
 	// 	]
 	// },
-	entry: {
-		main: './static/css/reset.css'
-	}
+	entry: [
+		'./static/js/main.js',
+		'./static/css/reset.css'
+	],
 	output: {
 		path: path.resolve(__dirname,'./dist'),
 		filename: 'bundle.js'
