@@ -1,5 +1,8 @@
-function myAlert() {
-	alert(1);
-}
 
-myAlert();
+var app = new Vue({
+	el: '#app',
+	data: {
+		skill: data.skill,
+		otherSkill: data.otherSkill
+	}
+})

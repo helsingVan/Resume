@@ -70,7 +70,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: C:\\Users\\Administrator\\Desktop\\myProject\\eResume\\static\\css\\reset.css Unexpected token (15:17)\nYou may need an appropriate loader to handle this file type.\n| -------------------------------------------------------------------------------*/\n| \n| html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {\n| \tmargin: 0;\n| \tpadding: 0;");
+throw new Error("Module build failed: Unknown word (5:1)\n\n  3 | // load the styles\n  4 | var content = require(\"!!./reset.css\");\n> 5 | if(typeof content === 'string') content = [[module.id, content, '']];\n    | ^\n  6 | // add the styles to the DOM\n  7 | var update = require(\"!../../node_modules/style-loader/addStyles.js\")(content, {});\n  8 | if(content.locals) module.exports = content.locals;\n");
 
 /***/ }),
 /* 1 */

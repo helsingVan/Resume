@@ -15,99 +15,111 @@
 	<script src="./lib/vue/vue.js"></script>
 </head>
 <body>
-<aside>
-	<div class="user">
-		<div class="wrapper logo"></div>
-		<div class="wrapper name">范广</div>
-		<div class="wrapper info">
-			<p>
-				<i class="fa fa-user-circle-o"></i>
-				<span>28岁  男</span>
-			</p>
-			<p>
-				<i class="fa fa-map-marker"></i>
-				<span>北京</span>
-			</p>
-			<p>
-				<i class="fa fa-mobile" style="font-size:22px;"></i>
-				<span>17346523203</span>
-			</p>
-			<p>
-				<i class="fa fa-envelope"></i>
-				<span>it.fan@foxmail.com</span>
-			</p>
-		</div>
-		<div class="wrapper link">
-			<p class="blog">
-				<span>
-					<i class="fa fa-rss"></i>
-				</span>
-				<span>博客：</span>
-				<a href="https://my.oschina.net/huskydog/blog">https://my.oschina.net/huskydog/blog</a>
-			</p>
-			<p class="github">
-				<span>
-					<i class="fa fa-github"></i>
-				</span>
-				<span>gitHub：</span>
-				<a href="https://github.com/helsingVan">
-					https://github.com/helsingVan
-				</a>
-			</p>
-		</div>
-	</div>
-</aside>
-<section>
-	<div class="main">
-		<section class="skill">
-			<div class="wrapper">
-				<header class="main-title clearfix">
-					<span class="logo">
-						<i class="fa fa-key"></i>
-					</span>
-					<h2>职业技能</h2>
-				</header>
-				<ul class="content">
-					<li>
-						<i class="fa fa-circle"></i>
-						熟悉W3C标准，对表现与数据分离，Web语义化有深刻理解，
-						致力于编写结构清晰，语义明确的HTML页面。
-					</li>
-				</ul>
+<div id="app">
+	<aside>
+		<div class="user">
+			<div class="wrapper logo"></div>
+			<div class="wrapper name">范广</div>
+			<div class="wrapper info">
+				<p>
+					<i class="fa fa-user-circle-o"></i>
+					<span>28岁  男</span>
+				</p>
+				<p>
+					<i class="fa fa-map-marker"></i>
+					<span>北京</span>
+				</p>
+				<p>
+					<i class="fa fa-mobile" style="font-size:22px;"></i>
+					<span>17346523203</span>
+				</p>
+				<p>
+					<i class="fa fa-envelope"></i>
+					<span>it.fan@foxmail.com</span>
+				</p>
 			</div>
+			<div class="wrapper link">
+				<p class="blog">
+					<span>
+						<i class="fa fa-rss"></i>
+					</span>
+					<span>博客：</span>
+					<a href="https://my.oschina.net/huskydog/blog">https://my.oschina.net/huskydog/blog</a>
+				</p>
+				<p class="github">
+					<span>
+						<i class="fa fa-github"></i>
+					</span>
+					<span>gitHub：</span>
+					<a href="https://github.com/helsingVan">
+						https://github.com/helsingVan
+					</a>
+				</p>
+			</div>
+		</div>
+	</aside>
+	<section>
+		<div class="main">
+			<section class="skill">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-key"></i>
+						</span>
+						<h2>职业技能</h2>
+					</header>
+					<ul class="content">
+						<li v-for="(value,key) in skill">
+							<i class="fa fa-circle"></i>
+							{{value}}
+						</li>
+						<br>
+						<li>其他：</li>
+						<li v-for="(value,key) in otherSkill">
+							<i class="fa fa-circle"></i>
+							{{value}}
+						</li>
+					</ul>
+
+				</div>
+				
+			</section>
+			<section class="work">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-file-code-o"></i>
+						</span>
+						<h2>工作经历</h2>
+					</header>
+				</div>
+			</section>
+			<section class="education">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-graduation-cap"></i>
+						</span>
+						<h2>教育经历</h2>
+					</header>
+				</div>
+			</section>
 			
-		</section>
-		<section class="education">
-			<div class="wrapper">
-				<header class="main-title clearfix">
-					<span class="logo">
-						<i class="fa fa-graduation-cap"></i>
-					</span>
-					<h2>教育经历</h2>
-				</header>
-			</div>
-		</section>
-		<section class="work">
-			<div class="wrapper">
-				<header class="main-title clearfix">
-					<span class="logo">
-						<i class="fa fa-file-code-o"></i>
-					</span>
-					<h2>工作经历</h2>
-				</header>
-			</div>
-		</section>
-		<section class="project">
-			<div class="wrapper">
-				<header class="main-title clearfix">
-					<span class="logo">
-						<i class="fa fa-code-fork"></i>
-					</span>
-					<h2>项目经验</h2>
-				</header>
-			</div>
-		</section>
-	</div>
-</section>
+			<section class="project">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-code-fork"></i>
+						</span>
+						<h2>项目经验</h2>
+					</header>
+				</div>
+			</section>
+		</div>
+	</section>
+</div>
+
+<script src="./static/js/data.js"></script>
+<script src="./static/js/main.js"></script>
 </body>
 </html>
