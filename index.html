@@ -6,7 +6,7 @@
 	<meta name="description" content="我的简历网站，程序员简历网站">
 	<meta name="generator" content="sublime text3">
 	<meta name="author" content="helsingVan">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
 	<title>web简历-van</title>
 	<link rel="stylesheet" href="./static/css/reset.css">
 	<link rel="stylesheet" href="./lib/font/css/font-awesome.min.css">
@@ -28,6 +28,10 @@
 				<p>
 					<i class="fa fa-map-marker"></i>
 					<span>北京</span>
+				</p>
+				<p>
+					<i class="fa fa-html5"></i>
+					<span>3年web前端开发</span>
 				</p>
 				<p>
 					<i class="fa fa-mobile" style="font-size:22px;"></i>
@@ -60,6 +64,7 @@
 	</aside>
 	<section>
 		<div class="main">
+
 			<section class="skill">
 				<div class="wrapper">
 					<header class="main-title clearfix">
@@ -92,23 +97,37 @@
 						</span>
 						<h2>工作经历</h2>
 					</header>
-					<div class="content">
-						<div class="item">
-							
-						</div>
+					<div class="content work-content">
+						<table>
+							<thead>
+								<tr>
+									<th>时间</th>
+									<th>公司</th>
+									<th>部门岗位</th>
+								</tr>
+							</thead>
+							<tbody v-for="item in work">
+								<tr>
+									<td>{{item.time}}</td>
+									<td>{{item.home}}</td>
+									<td>{{item.work}}</td>
+								</tr>
+								<tr>
+									<td style="padding-top:10px;">工作职责：</td>
+									<td colspan="2" style="text-align:left;">
+										<ol>
+											<li v-for="(value,index) in item.main">
+												{{value}}
+											</li>
+										</ol>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</section>
-			<section class="education">
-				<div class="wrapper">
-					<header class="main-title clearfix">
-						<span class="logo">
-							<i class="fa fa-graduation-cap"></i>
-						</span>
-						<h2>教育经历</h2>
-					</header>
-				</div>
-			</section>
+			
 			
 			<section class="project">
 				<div class="wrapper">
@@ -118,6 +137,74 @@
 						</span>
 						<h2>项目经验</h2>
 					</header>
+					<div class="content project-content">
+						<ol>
+							<li v-for="item in project">
+								<ul class="project-item">
+									<li>
+										<span class="title">名称：</span>
+										<p>{{item.name}}</p>
+									</li>
+									<li>
+										<span class="title">时间：</span>
+										<p>{{item.time}}</p>
+									</li>
+									<li>
+										<span class="title">项目介绍：</span>
+										<p>{{item.general}}</p>
+									</li>
+									<li>
+										<span class="title">技术选型：</span>
+										<p>{{item.technology}}</p>
+									</li>
+									<li>
+										<span class="title">工作及成果：</span>
+										<ul class="project-work">
+											<li v-for="(value,index) in item.work">
+												{{value}}
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+			<section class="education">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-graduation-cap"></i>
+						</span>
+						<h2>教育信息</h2>
+					</header>
+					<div class="content education-content">
+						<ul>
+							<li v-for="(value,key) in education">
+								<span class="title">{{key}}：</span>
+								<span>{{value}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="admin">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-graduation-cap"></i>
+						</span>
+						<h2>个人信息汇总</h2>
+					</header>
+					<div class="content education-content">
+						<ul>
+							<li v-for="(value,key) in admin">
+								<span class="title">{{key}}：</span>
+								<span>{{value}}</span>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 		</div>

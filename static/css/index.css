@@ -100,10 +100,58 @@
 	padding-bottom: 6px;
 	font-weight: 900;
 }
+.skill .fa {
+	margin-right: 8px;
+}
 
 .content {
-	padding:0 36px;
+	padding:10px 49px;
+	padding-right: 0;
 }
 .content li{
 	margin: 5px 0;
+}
+.work-content table {
+	width: 100%;
+}
+.work-content table th {
+	padding: 5px 0;
+}
+.work-content table td {
+	text-align: center;
+	padding:5px 0;
+}
+
+.project-item > li {
+	position: relative;
+	padding-left: 95px;
+}
+.project-item .title {
+	position: absolute;
+	text-align: center;
+	/*width: 95px;*/
+	top: 0;
+	left: 0;
+	font-weight: 900;
+}
+.project-content ol > li {
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+}
+.project-content ol > li:first-child {
+	border-top: 0 none;
+	margin-top: 0;
+}
+.project-work {
+	padding-left: 20px;
+}
+.project-work li {
+	list-style: disc;
+}
+
+.education-content .title {
+	font-weight: 900;
+	display: inline-block;
+	width: 90px;
 }
