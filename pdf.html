@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="简历，IT简历，程序员，前端，HTML5">
+	<meta name="description" content="我的简历网站，程序员简历网站">
+	<meta name="generator" content="sublime text3">
+	<meta name="author" content="helsingVan">
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+	<title>web简历-van</title>
+	<link rel="stylesheet" href="./static/css/reset.css">
+	<link rel="stylesheet" href="./lib/font/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./static/css/common.css">
+	<link rel="stylesheet" href="./static/css/pdf.css">
+	<script src="./lib/vue/vue.js"></script>
+</head>
+<body>
+<div id="app">
+	<aside>
+		<div class="user clearfix">
+			<!-- <div class="wrapper logo"></div> -->
+			<div class="wrapper name">范广</div>
+			<div class="wrapper info">
+				<p>
+					<i class="fa fa-html5"></i>
+					<span>3年web前端开发</span>
+				</p>
+				<p>
+					<i class="fa fa-globe"></i>
+					<span>求职意向：web前端，html5移动端</span>
+				</p>
+				<p>
+					<i class="fa fa-briefcase"></i>
+					<span>目前状态：在职</span>
+				</p>
+			</div>
+			<!-- <div class="wrapper info">
+				<p>
+					<i class="fa fa-user-circle-o"></i>
+					<span>28岁  男</span>
+				</p>
+				<p>
+					<i class="fa fa-map-marker"></i>
+					<span>北京</span>
+				</p>
+				<p>
+					<i class="fa fa-html5"></i>
+					<span>3年web前端开发</span>
+				</p>
+				<p>
+					<i class="fa fa-mobile" style="font-size:22px;"></i>
+					<span>17346523203</span>
+				</p>
+				<p>
+					<i class="fa fa-envelope"></i>
+					<span>it.fan@foxmail.com</span>
+				</p>
+			</div> -->
+			<!-- <div class="wrapper link">
+				<p class="blog">
+					<span>
+						<i class="fa fa-rss"></i>
+					</span>
+					<span>博客：</span>
+					<a href="https://my.oschina.net/huskydog/blog">https://my.oschina.net/huskydog/blog</a>
+				</p>
+				<p class="github">
+					<span>
+						<i class="fa fa-github"></i>
+					</span>
+					<span>gitHub：</span>
+					<a href="https://github.com/helsingVan">
+						https://github.com/helsingVan
+					</a>
+				</p>
+			</div> -->
+		</div>
+	</aside>
+	<section>
+		<div class="main">
+			<section class="admin">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-user"></i>
+						</span>
+						<h2>个人信息</h2>
+					</header>
+					<div class="content education-content">
+						<ul>
+							<li v-for="(value,key) in admin">
+								<span class="title">{{key}}：</span>
+								<span>{{value}}</span>
+							</li>
+							<li>
+								<span class="title">Blog：</span>
+								<a href="https://my.oschina.net/huskydog/blog">https://my.oschina.net/huskydog/blog</a>
+							</li>
+							<li>
+								<span class="title">GitHub：</span>
+								<a href="https://github.com/helsingVan">https://github.com/helsingVan</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="skill">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-key"></i>
+						</span>
+						<h2>职业技能</h2>
+					</header>
+					<ul class="content">
+						<li v-for="(value,key) in skill">
+							<i class="fa fa-circle"></i>
+							{{value}}
+						</li>
+						<br>
+						<li>其他：</li>
+						<li v-for="(value,key) in otherSkill">
+							<i class="fa fa-circle"></i>
+							{{value}}
+						</li>
+					</ul>
+
+				</div>
+				
+			</section>
+			<section class="work">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-file-code-o"></i>
+						</span>
+						<h2>工作经历</h2>
+					</header>
+					<div class="content work-content">
+						<table>
+							<thead>
+								<tr>
+									<th>时间</th>
+									<th>公司</th>
+									<th>部门岗位</th>
+								</tr>
+							</thead>
+							<tbody v-for="item in work">
+								<tr>
+									<td>{{item.time}}</td>
+									<td>{{item.home}}</td>
+									<td>{{item.work}}</td>
+								</tr>
+								<tr>
+									<td style="padding-top:10px;">工作职责：</td>
+									<td colspan="2" style="text-align:left;">
+										<ol>
+											<li v-for="(value,index) in item.main">
+												{{value}}
+											</li>
+										</ol>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="project">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-code-fork"></i>
+						</span>
+						<h2>项目经验</h2>
+					</header>
+					<div class="content project-content">
+						<ol>
+							<li v-for="item in project">
+								<ul class="project-item">
+									<li>
+										<span class="title">名称：</span>
+										<p>{{item.name}}</p>
+									</li>
+									<li>
+										<span class="title">时间：</span>
+										<p>{{item.time}}</p>
+									</li>
+									<li>
+										<span class="title">项目介绍：</span>
+										<p>{{item.general}}</p>
+									</li>
+									<li>
+										<span class="title">技术选型：</span>
+										<p>{{item.technology}}</p>
+									</li>
+									<li>
+										<span class="title">工作及成果：</span>
+										<ul class="project-work">
+											<li v-for="(value,index) in item.work">
+												{{value}}
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+			<section class="education">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-graduation-cap"></i>
+						</span>
+						<h2>教育信息</h2>
+					</header>
+					<div class="content education-content">
+						<ul>
+							<li v-for="(value,key) in education">
+								<span class="title">{{key}}：</span>
+								<span>{{value}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+	</section>
+	<footer>
+		<p>Thank &nbsp;&nbsp;you</p>
+	</footer>
+</div>
+
+<script src="./static/js/data.js"></script>
+<script src="./static/js/main.js"></script>
+</body>
+</html>

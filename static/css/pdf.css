@@ -1,0 +1,116 @@
+
+/*******侧边栏********/
+.user {
+	
+}
+/*user*/
+.user {
+	padding: 20px 40px;
+}
+.user .wrapper {
+	float: left;
+	margin-right: 50px;
+}
+.user .name {
+	font-size: 50px;
+	font-weight: 900;
+}
+.user .fa {
+	margin-right: 10px;
+}
+/****** 主体 ******/
+.main {
+	/*margin-left: 250px;*/
+	padding: 50px 0;
+	padding-top: 0;
+}
+.main .wrapper {
+	margin-bottom: 20px;
+}
+.main-title {
+	position: relative;
+	padding-left: 50px;
+}
+.main-title .logo {
+	float: left;
+	color: #fff;
+	background: #000;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	margin-top: -5px;
+	margin-left: -50px;
+}
+.main-title > h2 {
+	font-size: 18px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 6px;
+	font-weight: 900;
+}
+.skill .content .fa {
+	margin-right: 8px;
+}
+
+.content {
+	padding:10px 49px;
+	padding-right: 0;
+}
+.content li{
+	margin: 5px 0;
+}
+.work-content table {
+	width: 100%;
+}
+.work-content table th {
+	padding: 5px 0;
+}
+.work-content table td {
+	text-align: center;
+	padding:5px 0;
+}
+
+.project-item > li {
+	position: relative;
+	padding-left: 95px;
+}
+.project-item .title {
+	position: absolute;
+	text-align: center;
+	/*width: 95px;*/
+	top: 0;
+	left: 0;
+	font-weight: 900;
+}
+.project-content ol > li {
+	margin-top: 20px;
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+}
+.project-content ol > li:first-child {
+	border-top: 0 none;
+	margin-top: 0;
+}
+.project-work {
+	padding-left: 20px;
+}
+.project-work li {
+	list-style: disc;
+}
+
+.education-content .title {
+	font-weight: 900;
+	display: inline-block;
+	width: 90px;
+}
+
+footer {
+	padding-left: 50px;
+}
+footer > p {
+	border-top: 1px solid #000;
+	font-size: 50px;
+	font-weight: 900;
+	text-align: center;
+}
