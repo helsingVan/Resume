@@ -2,7 +2,7 @@ var data = {
 	skill: {
 		0: '熟悉W3C标准，对表现与数据分离，Web语义化有深刻理解，'
 			+'致力于编写结构清晰，语义明确的HTML页面。',
-		1: '熟练掌握HTML、CSS，熟悉HTML5、CSS3新特性，如H5媒体元素、LocalStorage、websocket，C3动画、flex布局等。',
+		1: '熟练掌握HTML、CSS，熟悉HTML5、CSS3新特性，如H5媒体元素、LocalStorage，C3动画、flex布局等。',
 		2: '熟练掌握JS，熟悉其核心技术DOM、BOM、Ajax等，熟悉闭包、继承、作用域等重要特性，掌握'
 			+ '面向对象编程，拥有清晰的编码思路及整洁的代码风格。',
 		3: '熟练掌握JS类库的使用，如jquery、zepto、underscore等，了解其运行机制。',
