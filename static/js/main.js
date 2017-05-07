@@ -9,4 +9,5 @@ var app = new Vue({
 		education: data.education,
 		admin: data.admin
 	}
-})
+});
+var data = '';
