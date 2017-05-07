@@ -11,3 +11,4 @@ var app = new Vue({
 	}
 });
 var data = '';
+var data2 = '';
