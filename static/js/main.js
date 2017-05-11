@@ -13,3 +13,4 @@ var app = new Vue({
 var data = '';
 var data2 = '';
 var data3 = '';
+var data4 = '';
