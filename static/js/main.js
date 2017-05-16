@@ -10,12 +10,5 @@ var app = new Vue({
 		admin: data.admin
 	}
 });
-var data = '';
-var data2 = '';
-var data3 = '';
-var data4 = '';
-var data5 = '';
-var data6 = "";
-var data7='';
-var data8='';
+
 
