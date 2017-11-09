@@ -2,23 +2,40 @@ var data = {
 	skill: {
 		0: '熟悉W3C标准，对表现与数据分离，Web语义化有深刻理解，'
 			+'致力于编写结构清晰，语义明确的HTML页面。',
-		1: '熟练掌握HTML、CSS，熟悉HTML5、CSS3新特性，如H5媒体元素、LocalStorage，C3动画、flex布局等。',
+		1: '熟练掌握HTML、CSS，熟悉HTML5、CSS3新特性，如H5媒体元素、web存储，C3动画、flex布局等。',
 		2: '熟练掌握JS，熟悉其核心技术DOM、BOM、Ajax等，熟悉闭包、继承、作用域等重要特性，掌握'
-			+ '面向对象编程，拥有清晰的编码思路及整洁的代码风格。',
-		3: '熟练掌握JS类库的使用，如jquery、zepto、underscore等，了解其运行机制。',
-		4: '熟悉前端MVVM框架Vue、knockout，使用Vue结合vue-router、vuex等进行组件化开发，构建webApp。',
-		5: '熟悉数据可视化图表库echarts.js。',
-		6: '熟悉前端常用ui框架，如jqueryUI、Bootstrap、Ant Design、vue-element。',
-		7: '了解Node的使用，搭配express框架，搭建web服务。',
-		8: '了解前端自动化构建工具webpack的使用。'
+			+ 'OOP，注重业务代码的抽象、重用、解耦等。',
+		3: '熟悉前端MVVM框架Vue、knockout，熟练掌握vue技术栈如vuex、vue-router、element-ui等。',
+		4: '熟练掌握JS常用类库的使用，如jquery、zepto、underscore等，了解其运行机制。',
+		5: '熟悉AMD,CMD规范，熟练掌握requireJs、SeaJs。',
+		6: '熟悉数据可视化开发，熟练掌握图表库echarts.js。',
+		7: '熟悉CSS预处理语言LESS，熟悉常用UI框架如bootstrap、foundation、pure，熟练掌握响应式web开发。',
+		// 7：'熟悉h5移动端常用适配方案如：rem、flexible，了解h5在ios、android相关兼容性问题'，
+		8: '熟悉前端自动化工具gulp及打包工具webpack的使用。',
+		9: '熟悉node.js的使用，搭配express或koa，搭建web服务。',
+		10: '熟悉PHP基本特性，熟悉其web框架Smarty,laravel的使用。',
+		11: '了解linux的日常使用，如：文件操作、vim、进程管理等。'
+	
 	},
 	otherSkill: {
 		0: '对前后端分离、webApp、数据可视化，有浓厚兴趣。',
 		1: 'github、stackoverflow、mdn重度使用者。'
 	},
 	work: [
+	    {
+	    	time: '2017.05.15-2017.11.07',
+	    	home: '北京六间房蜜枝科技',
+	    	work: '欢朋直播项目组，前端主程',
+	    	main: [
+	    		'负责项目组主站与app内嵌h5业务的前端工作。',
+	    		'负责产品前端技术选型方案，参与产品需求设计。',
+	    		'负责项目核心代码编写，把控项目整体代码质量，持续性优化，编写前端主要技术文档。',
+	    		'团队开发任务安排，跟进，团队成员培养、管理。',
+	    		'web前沿技术研究和新技术调研。'
+	    	]
+	    },
 		{
-			time: '2016.06.06 - 至今',
+			time: '2015.12 - 2017.05',
 			home: '百度（外派）',
 			work: '百度金融风控管理项目组，前端开发',
 			main: [
@@ -29,7 +46,7 @@ var data = {
 			]
 		},
 		{
-			time: '2014.05.10-2016.05.20',
+			time: '2013.11-2015.10',
 			home: '武汉拓普伟域网络有限公司（一路乐旅游）',
 			work: '技术部，前端开发',
 			main: [
@@ -40,8 +57,21 @@ var data = {
 		}
 	],
 	project: [
+	    {
+	    	time: '2017.05-2017.11',
+	    	name: '欢朋直播PC与移动主站',
+	    	general: '欢朋直播是一款专注于手游领域的直播平台，属六间房秀场旗下产品',
+	    	technology: [
+	    		'pc主站：smarty，jquery，require.js，flash，higncharts',
+	    		'移动主站：vue全家桶，iscroll'
+	    	],
+	    	work: [
+	    		'pc主站重构采用AMD规范模块化开发，解决公共js代码量大加载慢、js全局变量混乱、代码冗余等问题。',
+	    		'移动主站展示页采用spa方案，提高用户体验。'
+	    	]
+	    },
 		{
-			time: '2016.06.06-至今',
+			time: '2016.02-2017.05',
 			name: '百度金融Rimbi',
 			general: 'Rimbi是一个大数据展示平台，基于百度金融产品线的流量数据，深度挖掘，深度分析，致力于为风控团队提供丰富的产品数据展示。',
 			technology: [
@@ -56,7 +86,7 @@ var data = {
 			]
 		},
 		{
-			time: '2016.11.01-至今',
+			time: '2016.11-2017.05',
 			name: '有数平台',
 			general: '有数平台是一个大数据服务平台，基于Rimbi金融风控丰富的数据源，建设完善的风控数据仓库集市，致力于为业务团队提供便捷高效的数据查询、数据分析、数据加工、数据获取等服务，有效提高数据任务的开发效率, 节约人力和时间成本。',
 			technology: [
@@ -68,7 +98,7 @@ var data = {
 			]
 		},
 		{
-			time: '2014.09-2015.06',
+			time: '2014.12-2015.10',
 			name: '一路乐旅游官网',
 			general: '旅游门户网站，致力于为游客打造最直观的旅游指南（现已转型app）',
 			technology: [
@@ -81,7 +111,7 @@ var data = {
 			]
 		},
 		{
-			time: '2015.07-2016.05',
+			time: '2015.03-2015.10',
 			name: '一路乐旅游app（推广页模块）',
 			general: '智慧旅游技术服务平台',
 			technology: [
