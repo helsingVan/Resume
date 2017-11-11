@@ -114,3 +114,12 @@ footer > p {
 	font-weight: 900;
 	text-align: center;
 }
+
+@media print {
+	.skill {
+		margin-bottom: 120px!important;
+	}
+	.project {
+		margin-bottom: 100px!important;
+	}
+}

@@ -10,6 +10,7 @@
 	<title>范广-web前端</title>
 	<link rel="stylesheet" href="./static/css/reset.css">
 	<link rel="stylesheet" href="./lib/font/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_444926_e3mrgwtvcdgkqpvi.css"> -->
 	<link rel="stylesheet" href="./static/css/common.css">
 	<link rel="stylesheet" href="./static/css/pdf.css">
 	<script src="./lib/vue/vue.js"></script>
@@ -23,7 +24,7 @@
 			<div class="wrapper info">
 				<p>
 					<i class="fa fa-html5"></i>
-					<span>3年web前端开发</span>
+					<span>4年web前端开发</span>
 				</p>
 				<p>
 					<i class="fa fa-globe"></i>
@@ -31,7 +32,7 @@
 				</p>
 				<p>
 					<i class="fa fa-briefcase"></i>
-					<span>目前状态：在职</span>
+					<span>目前状态：离职</span>
 				</p>
 			</div> 
 			<!-- <div class="wrapper info">
@@ -104,7 +105,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="skill">
+			<section class="skill" style="margin-bottom: 30px;">
 				<div class="wrapper">
 					<header class="main-title clearfix">
 						<span class="logo">
@@ -132,15 +133,15 @@
 				<div class="wrapper">
 					<header class="main-title clearfix">
 						<span class="logo">
-							<i class="fa fa-file-code-o"></i>
+							<i class="fa fa-desktop" style="color:#fff"></i>
 						</span>
 						<h2>工作经历23</h2>
 					</header>
 					<div class="content work-content">
 						<table>
 							<thead>
-								<tr>
-									<th>时间</th>
+								<tr >
+									<th style="width: 22%">时间</th>
 									<th>公司</th>
 									<th>部门岗位</th>
 								</tr>
@@ -207,6 +208,24 @@
 								</ul>
 							</li>
 						</ol>
+					</div>
+				</div>
+			</section>
+			<section class="van">
+				<div class="wrapper">
+					<header class="main-title clearfix">
+						<span class="logo">
+							<i class="fa fa-code"></i>
+						</span>
+						<h2>个人作品</h2>
+					</header>
+					<div class="content van-content">
+						<ul>
+							<li v-for="(value,key) in van">
+								<span class="title">{{key}}：</span>
+								<span>{{value}}</span>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>

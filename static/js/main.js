@@ -7,7 +7,8 @@ var app = new Vue({
 		work: data.work,
 		project: data.project,
 		education: data.education,
-		admin: data.admin
+		admin: data.admin,
+		van: data.van
 	}
 });
 
