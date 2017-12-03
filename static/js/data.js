@@ -30,7 +30,6 @@ var data = {
 	    		'负责项目组主站与app内嵌h5业务的前端工作。',
 	    		'负责产品前端技术选型方案，参与产品需求设计。',
 	    		'负责项目核心代码编写，把控项目整体代码质量，持续性优化，编写前端主要技术文档。',
-	    		'团队开发任务安排，跟进，团队成员培养、管理。',
 	    		'web前沿技术研究和新技术调研。'
 	    	]
 	    },
@@ -62,7 +61,7 @@ var data = {
 	    	name: '欢朋直播PC与移动主站',
 	    	general: '欢朋直播是一款专注于手游领域的直播平台，属六间房秀场旗下产品',
 	    	technology: [
-	    		'pc主站：smarty，jquery，require.js，flash，higncharts',
+	    		'pc主站：smarty，jquery，require.js，flash，highcharts',
 	    		'移动主站：vue全家桶，iscroll，zepto.js，websocket'
 	    	],
 	    	work: [
@@ -139,7 +138,7 @@ var data = {
 		'籍贯': '湖北黄冈',
 		'现居': '北京',
 		'电话': '173-4652-3203',
+		'微信': '369739663',
 		'邮箱': 'it.fan@foxmail.com',
-
 	}
 }
