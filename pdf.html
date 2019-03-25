@@ -247,8 +247,8 @@
 						<h2>教育信息</h2>
 					</header>
 					<div class="content education-content">
-						<ul>
-							<li v-for="(value,key) in education">
+						<ul v-for="item in education">
+							<li v-for="(value, key) in item">
 								<span class="title">{{key}}：</span>
 								<span>{{value}}</span>
 							</li>
